@@ -10,3 +10,8 @@ jenkins:
         ttl: 10
       userIdStrategy: CaseSensitive
       groupIdStrategy: CaseSensitive
+  plugins:
+  required:
+    git:
+    warnings:
+    ldap:
