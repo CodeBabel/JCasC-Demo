@@ -10,3 +10,18 @@ jenkins:
         ttl: 10
       userIdStrategy: CaseSensitive
       groupIdStrategy: CaseSensitive
+  nodes:
+    - permanent:
+        name: "static-slave"
+        remoteFS: "/home/jenkins"
+        launcher:
+          jnlp:
+
+  slaveAgentPort: 50000
+  agentProtocols:
+    - "jnlp2"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
