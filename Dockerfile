@@ -2,4 +2,4 @@ FROM jenkins/jenkins:lts
 # Skip initial setup
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 RUN /usr/local/bin/install-plugins.sh configuration-as-code
-ENV CASC_JENKINS_CONFIG https://github.com/CodeBabel/JCasC-Demo/blob/master/Jenkins-JCasC.yml
+ENV CASC_JENKINS_CONFIG https://raw.githubusercontent.com/CodeBabel/JCasC-Demo/master/Jenkins-JCasC.yml
