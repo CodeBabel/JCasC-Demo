@@ -10,6 +10,29 @@ jenkins:
         ttl: 10
       userIdStrategy: CaseSensitive
       groupIdStrategy: CaseSensitive
-# plugins:
-#   required:
-#     git: latest
+credentials:
+  system:
+    domainCredentials:
+      - domain :
+          name: "test.com"
+          description: "test.com domain"
+          specifications:
+            - hostnameSpecification:
+                includes: "*.test.com"
+        credentials:
+          - usernamePassword:
+              scope:    SYSTEM
+              id:       sudo_password
+              username: root
+              password: root
+unclassified:
+  simple-theme-plugin:
+    elements:
+      - cssUrl:
+          url: "https://example.bogus/test.css"
+      - cssText:
+          text: ".testcss { color: red }"
+      - jsUrl:
+          url: "https://example.bogus/test.js"
+      - faviconUrl:
+          url: "https://vignette.wikia.nocookie.net/deadpool/images/6/64/Favicon.ico"
