@@ -10,6 +10,9 @@ jenkins:
         ttl: 10
       userIdStrategy: CaseSensitive
       groupIdStrategy: CaseSensitive
+plugins:
+  required:
+    simple-theme-plugin: latest
 credentials:
   system:
     domainCredentials:
