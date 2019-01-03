@@ -10,6 +10,6 @@ jenkins:
         ttl: 10
       userIdStrategy: CaseSensitive
       groupIdStrategy: CaseSensitive
-plugins:
-  required:
-    git: latest
+# plugins:
+#   required:
+#     git: latest
